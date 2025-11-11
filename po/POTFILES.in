@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/org.lucamurdoch.PetRock.desktop.in
+data/org.lucamurdoch.PetRock.metainfo.xml.in
+data/org.lucamurdoch.PetRock.gschema.xml
+src/main.c
+src/petrock-window.c
+src/petrock-window.ui

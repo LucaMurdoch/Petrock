@@ -1,0 +1,807 @@
+Build started at 2025-11-11T19:21:14.716830
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.8.5
+Source dir: /home/lucamurdoch/Documents/Gnome Apps/PetRock
+Build dir: /home/lucamurdoch/Documents/Gnome Apps/PetRock/build
+Build type: native build
+Project name: petrock
+Project version: 0.1.0
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 15.2.1 20251022 (Red Hat 15.2.1-3)
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.45-1.fc43
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 15.2.1 20251022 (Red Hat 15.2.1-3)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMUqgkD.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/sanitycheckc.exe'
+C compiler for the host machine: ccache cc (gcc 15.2.1 "cc (GCC) 15.2.1 20251022 (Red Hat 15.2.1-3)")
+C linker for the host machine: cc ld.bfd 2.45-1
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.45-1.fc43
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 15.2.1 20251022 (Red Hat 15.2.1-3)
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 0
+stdout:
+GNU ld version 2.45-1.fc43
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 15.2.1 20251022 (Red Hat 15.2.1-3)
+/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXcogid.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+-----------
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/sanitycheckc.exe'
+C compiler for the build machine: ccache cc (gcc 15.2.1 "cc (GCC) 15.2.1 20251022 (Red Hat 15.2.1-3)")
+C linker for the build machine: cc ld.bfd 2.45-1
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar version 2.45-1.fc43
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Configuring config.h using configuration
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp8df847f_
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp8df847f_/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp8df847f_/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-align` -> 0
+Compiler for C supports arguments -Wcast-align: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp31yu0lze
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp31yu0lze/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp31yu0lze/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement` -> 0
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp9g8nknq3
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp9g8nknq3/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp9g8nknq3/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=address` -> 0
+Compiler for C supports arguments -Werror=address: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp394it2ww
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp394it2ww/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp394it2ww/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=array-bounds` -> 0
+Compiler for C supports arguments -Werror=array-bounds: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp60p_8fab
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp60p_8fab/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp60p_8fab/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=empty-body` -> 0
+Compiler for C supports arguments -Werror=empty-body: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpz3xozmdo
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpz3xozmdo/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpz3xozmdo/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit` -> 0
+Compiler for C supports arguments -Werror=implicit: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpbgywqih5
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpbgywqih5/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpbgywqih5/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration` -> 0
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpctv785rw
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpctv785rw/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpctv785rw/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=incompatible-pointer-types` -> 0
+Compiler for C supports arguments -Werror=incompatible-pointer-types: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxru2nown
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxru2nown/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxru2nown/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=init-self` -> 0
+Compiler for C supports arguments -Werror=init-self: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmputxj1too
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmputxj1too/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmputxj1too/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-conversion` -> 0
+Compiler for C supports arguments -Werror=int-conversion: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpnxbqz_j2
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpnxbqz_j2/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpnxbqz_j2/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=int-to-pointer-cast` -> 0
+Compiler for C supports arguments -Werror=int-to-pointer-cast: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpst7gnqzp
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpst7gnqzp/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpst7gnqzp/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=main` -> 0
+Compiler for C supports arguments -Werror=main: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpzryxwj12
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpzryxwj12/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpzryxwj12/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=misleading-indentation` -> 0
+Compiler for C supports arguments -Werror=misleading-indentation: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk5vfx1e2
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk5vfx1e2/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk5vfx1e2/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-braces` -> 0
+Compiler for C supports arguments -Werror=missing-braces: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp14zzh906
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp14zzh906/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp14zzh906/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-include-dirs` -> 0
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp_wqaxxyi
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp_wqaxxyi/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp_wqaxxyi/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=nonnull` -> 0
+Compiler for C supports arguments -Werror=nonnull: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6v1h_pyc
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6v1h_pyc/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6v1h_pyc/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=overflow` -> 0
+Compiler for C supports arguments -Werror=overflow: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpy2la2tcr
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpy2la2tcr/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpy2la2tcr/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=parenthesis` -> 1
+stderr:
+cc1: error: '-Werror=parenthesis': no option '-Wparenthesis'; did you mean '-Wparentheses'?
+-----------
+Compiler for C supports arguments -Werror=parenthesis: NO 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpf_z11j6d
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpf_z11j6d/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpf_z11j6d/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-arith` -> 0
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpi8833i3g
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpi8833i3g/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpi8833i3g/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=pointer-to-int-cast` -> 0
+Compiler for C supports arguments -Werror=pointer-to-int-cast: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpwaxml1ml
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpwaxml1ml/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpwaxml1ml/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=redundant-decls` -> 0
+Compiler for C supports arguments -Werror=redundant-decls: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpm2bycw5c
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpm2bycw5c/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpm2bycw5c/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=return-type` -> 0
+Compiler for C supports arguments -Werror=return-type: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6nw1111d
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6nw1111d/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp6nw1111d/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=sequence-point` -> 0
+Compiler for C supports arguments -Werror=sequence-point: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpfa0mrst3
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpfa0mrst3/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpfa0mrst3/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=shadow` -> 0
+Compiler for C supports arguments -Werror=shadow: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpg0csztfw
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpg0csztfw/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpg0csztfw/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=strict-prototypes` -> 0
+Compiler for C supports arguments -Werror=strict-prototypes: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpcpe4na30
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpcpe4na30/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpcpe4na30/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=trigraphs` -> 0
+Compiler for C supports arguments -Werror=trigraphs: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp32qbxitb
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp32qbxitb/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp32qbxitb/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=undef` -> 0
+Compiler for C supports arguments -Werror=undef: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpekt9eh1t
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpekt9eh1t/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpekt9eh1t/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=write-strings` -> 0
+Compiler for C supports arguments -Werror=write-strings: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmppm820gu9
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmppm820gu9/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmppm820gu9/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral` -> 0
+stderr:
+cc1: warning: '-Wformat-nonliteral' ignored without '-Wformat' [-Wformat-nonliteral]
+-----------
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxkovpqwi
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxkovpqwi/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpxkovpqwi/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wignored-qualifiers` -> 0
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpl1vdn3gh
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpl1vdn3gh/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpl1vdn3gh/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-function-declaration` -> 0
+Compiler for C supports arguments -Wimplicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp56w1e2bq
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp56w1e2bq/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp56w1e2bq/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wlogical-op` -> 0
+Compiler for C supports arguments -Wlogical-op: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk8u1vz1x
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk8u1vz1x/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpk8u1vz1x/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations` -> 0
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpa90hao2a
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpa90hao2a/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpa90hao2a/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-format-attribute` -> 0
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe4r3ou3p
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe4r3ou3p/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe4r3ou3p/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-include-dirs` -> 0
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprwuhcmd2
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprwuhcmd2/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprwuhcmd2/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-noreturn` -> 0
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmptckvtt85
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmptckvtt85/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmptckvtt85/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs` -> 0
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprvrsj0ab
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprvrsj0ab/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprvrsj0ab/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wcast-function-type -Wno-cast-function-type` -> 0
+Compiler for C supports arguments -Wno-cast-function-type: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpurf5pb4_
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpurf5pb4_/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpurf5pb4_/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wdangling-pointer -Wno-dangling-pointer` -> 0
+Compiler for C supports arguments -Wno-dangling-pointer: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpp7zro7fk
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpp7zro7fk/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpp7zro7fk/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers` -> 0
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe0s1yrt6
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe0s1yrt6/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpe0s1yrt6/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare -Wno-sign-compare` -> 0
+Compiler for C supports arguments -Wno-sign-compare: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj6bj5ga5
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj6bj5ga5/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj6bj5ga5/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter` -> 0
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp7k_voeod
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp7k_voeod/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp7k_voeod/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition` -> 0
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpx7cegjlg
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpx7cegjlg/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpx7cegjlg/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith` -> 0
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpehi4dtnj
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpehi4dtnj/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpehi4dtnj/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wredundant-decls` -> 0
+Compiler for C supports arguments -Wredundant-decls: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpdr5hjhi2
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpdr5hjhi2/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpdr5hjhi2/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes` -> 0
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpr21qfidt
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpr21qfidt/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpr21qfidt/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-default` -> 0
+Compiler for C supports arguments -Wswitch-default: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj2tllkor
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj2tllkor/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpj2tllkor/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-enum` -> 0
+Compiler for C supports arguments -Wswitch-enum: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpexqpyd5n
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpexqpyd5n/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpexqpyd5n/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wundef` -> 0
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp30ftus1d
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp30ftus1d/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp30ftus1d/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wuninitialized` -> 0
+Compiler for C supports arguments -Wuninitialized: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpq1cc8xun
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpq1cc8xun/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpq1cc8xun/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused` -> 0
+Compiler for C supports arguments -Wunused: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp582tmwky
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp582tmwky/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmp582tmwky/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -fno-strict-aliasing` -> 0
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpgtcmr04u
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpgtcmr04u/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpgtcmr04u/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=format-security -Werror=format=2` -> 0
+Compiler for C supports arguments -Werror=format-security -Werror=format=2: YES 
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpklb_m5in
+Code:
+extern int i;
+int i;
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpklb_m5in/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpklb_m5in/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-strong` -> 0
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Adding test "Validate desktop file"
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Adding test "Validate appstream file"
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Adding test "Validate schema file"
+Configuring org.lucamurdoch.PetRock.service using configuration
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 2.3.0
+Determining dependency 'gtk4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gtk4` -> 0
+stdout:
+4.20.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gtk4` -> 0
+stdout:
+-I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/libxml2 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib64/graphene-1.0/include -mfpmath=sse -msse -msse2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-L/usr/lib64 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprr_drw_2
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprr_drw_2/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmprr_drw_2/output.exe' -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpsr3jm7hf
+Code:
+
+-----------
+Command line: `cc '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpsr3jm7hf/testfile.c' -o '/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/meson-private/tmpsr3jm7hf/output.obj' -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/x86_64-redhat-linux/15/
+programs: =/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/bin/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/bin/
+libraries: =/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/x86_64-redhat-linux/15/:/lib/../lib64/:/usr/lib/x86_64-redhat-linux/15/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/lib/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency gtk4 found: YES 4.20.2
+Determining dependency 'libadwaita-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libadwaita-1` -> 0
+stdout:
+1.8.1
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libadwaita-1` -> 0
+stdout:
+-I/usr/include/libadwaita-1 -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glycin-2 -I/usr/include/cairo -I/usr/include/libxml2 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib64/graphene-1.0/include -mfpmath=sse -msse -msse2 -I/usr/include/fribidi -I/usr/include/appstream -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-L/usr/lib64 -ladwaita-1 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-ladwaita-1 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency libadwaita-1 found: YES 1.8.1
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+stdout:
+2.86.1
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-L/usr/lib64 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-lglib-2.0
+-----------
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+stdout:
+2.86.1
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -DWITH_GZFILEOP -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-L/usr/lib64 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Build-time dependency gio-2.0 found: YES 2.86.1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_resources gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-resources
+-----------
+Got pkg-config variable glib_compile_resources : /usr/bin/glib-compile-resources
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.86.1 (cached)
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_schemas gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-schemas
+-----------
+Got pkg-config variable glib_compile_schemas : /usr/bin/glib-compile-schemas
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 8
+
+Found ninja-1.13.1 at /usr/bin/ninja
+Failed to guess install tag for /usr/local/share/applications/org.lucamurdoch.PetRock.desktop
+Failed to guess install tag for /usr/local/share/metainfo/org.lucamurdoch.PetRock.metainfo.xml
+Failed to guess install tag for /usr/local/share/glib-2.0/schemas/org.lucamurdoch.PetRock.gschema.xml
+Failed to guess install tag for /usr/local/share/dbus-1/services/org.lucamurdoch.PetRock.service
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/org.lucamurdoch.PetRock.svg
+Failed to guess install tag for /usr/local/share/icons/hicolor/symbolic/apps/org.lucamurdoch.PetRock-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /usr/local/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /usr/local/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /usr/local/share/applications
+Failed to guess install tag for /usr/local/share/applications/org.lucamurdoch.PetRock.desktop
+Failed to guess install tag for /usr/local/share/metainfo/org.lucamurdoch.PetRock.metainfo.xml
+Failed to guess install tag for /usr/local/share/glib-2.0/schemas/org.lucamurdoch.PetRock.gschema.xml
+Failed to guess install tag for /usr/local/share/dbus-1/services/org.lucamurdoch.PetRock.service
+Failed to guess install tag for /usr/local/share/icons/hicolor/scalable/apps/org.lucamurdoch.PetRock.svg
+Failed to guess install tag for /usr/local/share/icons/hicolor/symbolic/apps/org.lucamurdoch.PetRock-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /usr/local/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /usr/local/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /usr/local/share/applications

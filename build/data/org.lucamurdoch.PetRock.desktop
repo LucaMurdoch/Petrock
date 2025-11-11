@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=PetRock
+Comment=Adopt a steadfast pet that never needs feeding
+Exec=petrock
+Icon=org.lucamurdoch.PetRock
+Terminal=false
+Type=Application
+Categories=Utility;Game;
+Keywords=rock;pet;calm;relax;gnome;
+StartupNotify=true
+DBusActivatable=true

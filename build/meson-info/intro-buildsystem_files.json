@@ -1,0 +1,8 @@
+[
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/meson.build",
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/meson.build",
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/org.lucamurdoch.PetRock.service.in",
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/icons/meson.build",
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/src/meson.build",
+  "/home/lucamurdoch/Documents/Gnome Apps/PetRock/po/meson.build"
+]

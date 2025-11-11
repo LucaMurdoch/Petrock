@@ -1,0 +1,65 @@
+[
+  {
+    "cmd": [
+      "/usr/bin/desktop-file-validate",
+      "data/org.lucamurdoch.PetRock.desktop"
+    ],
+    "env": {},
+    "name": "Validate desktop file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "petrock"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "3a6eb07@@org.lucamurdoch.PetRock.desktop@cus"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/usr/bin/appstreamcli",
+      "validate",
+      "--no-net",
+      "--explain",
+      "data/org.lucamurdoch.PetRock.metainfo.xml"
+    ],
+    "env": {},
+    "name": "Validate appstream file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "petrock"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "3a6eb07@@org.lucamurdoch.PetRock.metainfo.xml@cus"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/usr/bin/glib-compile-schemas",
+      "--strict",
+      "--dry-run",
+      "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data"
+    ],
+    "env": {},
+    "name": "Validate schema file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "petrock"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [],
+    "extra_paths": []
+  }
+]

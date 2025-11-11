@@ -1,0 +1,27 @@
+app-id: org.lucamurdoch.PetRock
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: petrock
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/pkgconfig
+  - /share/doc
+  - /share/man
+  - /share/gtk-doc
+  - /man
+  - '*.a'
+  - '*.la'
+modules:
+  - name: petrock
+    buildsystem: meson
+    builddir: true
+    sources:
+      - type: dir
+        path: .

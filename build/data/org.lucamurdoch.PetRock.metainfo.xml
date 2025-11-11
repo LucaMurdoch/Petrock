@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.lucamurdoch.PetRock</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>PetRock</name>
+  <summary>Adopt a steadfast pet rock</summary>
+  <description>
+    <p>PetRock is a playful GNOME companion that celebrates the joy of looking after a pet that does absolutely nothing. Compliment Pebble, admire their calm presence, and learn delightfully useless facts about sedimentary life.</p>
+    <ul>
+      <li>Compliment your rock to increase its glow and track how many kind words you have shared.</li>
+      <li>Read a rotating collection of whimsical facts every time you interact with Pebble.</li>
+      <li>Enjoy a cozy GNOME-style interface that looks right at home on desktops and touch devices.</li>
+    </ul>
+  </description>
+  <developer id="dev.lucamurdoch">
+    <name>Luca Murdoch</name>
+  </developer>
+  <url type="homepage">https://github.com/lucamurdoch/PetRock</url>
+  <url type="vcs-browser">https://github.com/lucamurdoch/PetRock</url>
+  <url type="bugtracker">https://github.com/lucamurdoch/PetRock/issues</url>
+  <url type="help">https://github.com/lucamurdoch/PetRock#readme</url>
+  <url type="contact">https://github.com/lucamurdoch/PetRock/discussions</url>
+  <url type="donation">https://github.com/sponsors/lucamurdoch</url>
+  <url type="contribute">https://github.com/lucamurdoch/PetRock#contributing</url>
+  <url type="faq">https://github.com/lucamurdoch/PetRock#faq</url>
+  <url type="translate">https://github.com/lucamurdoch/PetRock#translations</url>
+  <translation type="gettext">petrock</translation>
+  <!-- All graphical applications having a desktop file must have this tag in the MetaInfo.
+     If this is present, appstreamcli compose will pull icons, keywords and categories from the desktop file. -->
+  <launchable type="desktop-id">org.lucamurdoch.PetRock.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#4f6ef7</color>
+    <color type="primary" scheme_preference="dark">#2b3156</color>
+  </branding>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/lucamurdoch/PetRock/main/data/screenshots/petrock-main.png</image>
+      <caption>Compliment Pebble and watch their aura glow brighter.</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.1.0" date="2025-01-23">
+      <description>
+        <p>First public release of PetRock.</p>
+        <ul>
+          <li>Brand new GTK 4 interface with a custom-drawn rock companion.</li>
+          <li>Compliment counter with evolving rock facts.</li>
+          <li>Initial translations infrastructure and Flatpak support.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

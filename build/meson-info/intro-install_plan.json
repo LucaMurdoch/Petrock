@@ -1,0 +1,46 @@
+{
+  "targets": {
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/data/org.lucamurdoch.PetRock.desktop": {
+      "destination": "{datadir}/applications/org.lucamurdoch.PetRock.desktop",
+      "tag": null,
+      "subproject": null,
+      "install_rpath": null
+    },
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/data/org.lucamurdoch.PetRock.metainfo.xml": {
+      "destination": "{datadir}/metainfo/org.lucamurdoch.PetRock.metainfo.xml",
+      "tag": null,
+      "subproject": null,
+      "install_rpath": null
+    },
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/src/petrock": {
+      "destination": "{bindir}/petrock",
+      "tag": "runtime",
+      "subproject": null,
+      "install_rpath": null
+    }
+  },
+  "data": {
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/org.lucamurdoch.PetRock.gschema.xml": {
+      "destination": "{datadir}/glib-2.0/schemas/org.lucamurdoch.PetRock.gschema.xml",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/icons/hicolor/scalable/apps/org.lucamurdoch.PetRock.svg": {
+      "destination": "{datadir}/icons/hicolor/scalable/apps/org.lucamurdoch.PetRock.svg",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/data/icons/hicolor/symbolic/apps/org.lucamurdoch.PetRock-symbolic.svg": {
+      "destination": "{datadir}/icons/hicolor/symbolic/apps/org.lucamurdoch.PetRock-symbolic.svg",
+      "tag": null,
+      "subproject": null
+    }
+  },
+  "configure": {
+    "/home/lucamurdoch/Documents/Gnome Apps/PetRock/build/data/org.lucamurdoch.PetRock.service": {
+      "destination": "{datadir}/dbus-1/services/org.lucamurdoch.PetRock.service",
+      "tag": null,
+      "subproject": null
+    }
+  }
+}

@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.lucamurdoch.PetRock
+Exec=/usr/local/bin/petrock --gapplication-service

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="petrock">
+	<schema id="org.lucamurdoch.PetRock" path="/org/lucamurdoch/PetRock/">
+	</schema>
+</schemalist>
